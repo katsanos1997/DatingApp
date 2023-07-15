@@ -1,0 +1,5 @@
+cd client
+ng serve
+
+cd API
+dotnet watch --no-hot-reload
