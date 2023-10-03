@@ -482,3 +482,5 @@ MyDocks/setup.txt
 API/Properties/launchSettings copy
 my_script.sh
 MyDocks/versions
+API/datingapp.db-shm
+API/datingapp.db-wal
