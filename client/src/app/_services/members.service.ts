@@ -4,7 +4,7 @@ import { environment } from 'src/environments/environment';
 import { Member } from '../_models/member';
 import { map, of, take } from 'rxjs';
 import { PaginationResult } from '../_models/pagination';
-import { UserParams } from '../_models/userParaps';
+import { UserParams } from '../_models/userParams';
 import { AccountService } from './account.service';
 import { User } from '../_models/user';
 
@@ -107,6 +107,14 @@ export class MembersService {
 
     return this.getPaginatedResult<Member[]>(this.baseUrl + 'likes', params);
     //return this.http.get<Member[]>(this.baseUrl + 'likes?predicate=' + predicate);
+
+    //here I can add 'cashing' for LIKES - it is not recommended
+    //return this.getPaginatedResult<Member[]>(this.baseUrl + 'users', params).pipe(
+    //  map(responce => {
+    //    this.memberCache.set(Object.values(userParams).join('-'), responce);
+    //    return responce;
+    //  })
+    //)
   }
 
   private getPaginatedResult<T>(url: string, params: HttpParams) {
