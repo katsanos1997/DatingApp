@@ -4,7 +4,7 @@ using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
 using Microsoft.Extensions.Options;
 
-namespace API.Entities
+namespace API.Services
 {
     public class PhotoService : IPhotoService
     {

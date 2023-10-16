@@ -10,6 +10,12 @@ import { ToastrService } from 'ngx-toastr';
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
+//here, I can fix the non critical problem with 2 logins, eg first login as male_user, second login as female_user 
+//-> during the second login the default value is FEMALE!!!  
+//   - app\members\member-list\member-list.component.ts
+//   - cashing
+//   - I have to inject the member service here
+//   - reset the user & member param in login()
 export class NavComponent implements OnInit{
   model: any = {}
 
