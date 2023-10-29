@@ -3,3 +3,5 @@ ng serve
 
 cd API
 dotnet watch --no-hot-reload
+
+εγκατάσταση στο nuget το microsoft.aspnetcore.identity.entityframwork
